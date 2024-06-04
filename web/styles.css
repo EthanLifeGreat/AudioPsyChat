@@ -1,0 +1,94 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f8;
+    margin: 0;
+    padding: 10px;
+}
+h2 {
+    font-size: 32px;         /* 设置字体大小 */
+    text-align: center;      /* 文本居中显示 */
+    color: #2C3E50;          /* 设定字体颜色，选择深蓝色 */
+    font-family: 'Arial', sans-serif; /* 设置字体，可选的字体为Arial和无衬线字体 */
+    padding: 20px 0;         /* 上下边距 */
+    /* 去除默认的外边距 */
+    margin: 0 0 20px;
+    background-color: #ECF0F1; /* 背景色，浅灰色 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 添加轻微的阴影效果 */
+    border-radius: 8px;      /* 圆角边框 */
+}
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* 设定最大宽度和controls一致 */
+    margin: auto; /* 自动外边距确保居中 */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-height: 600px;
+    overflow-y: auto;
+}
+.message {
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 20px;
+    max-width: 100%; /* 如果你希望message宽度不超出容器 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-text {
+    flex-grow: 1;          /* 允许文本容器占据所有可用空间 */
+    margin-right: 10px;    /* 为按钮留出空间 */
+    word-wrap: break-word; /* 确保文本在容器内换行 */
+}
+
+.therapist, .user {
+    flex-grow: 1;
+}
+
+.therapist {
+    background-color: #f1f1f1;
+}
+
+.user {
+    background-color: #d1edff;
+}
+
+#controls {
+    max-width: 600px; /* 设定最大宽度与chat-container一致 */
+    display: flex;
+    align-items: center;
+    margin: 20px auto; /* 设置顶部外边距和水平居中 */
+    gap: 10px;
+}
+
+textarea {
+    flex-grow: 1;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:disabled {
+    background-color: #ccc;
+}
+.audio-button {
+    flex-shrink: 0;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin-left: 10px;
+}

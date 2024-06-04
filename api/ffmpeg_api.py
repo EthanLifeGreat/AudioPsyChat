@@ -8,6 +8,7 @@ def convert_opus_to_wav(webm_file_path, wav_file_path):
     command2 = ffmpeg_path + ' -i ' + webm_file_path + ' -vn  -acodec pcm_s16le -f wav -ar 16000 -ac 1 ' + wav_file_path
 
     # 执行命令并等待完成
+    os.system("which ffmpeg")
     os.system(command1)
     os.system(command2)
 

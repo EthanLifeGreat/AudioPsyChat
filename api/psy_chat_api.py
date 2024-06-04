@@ -65,7 +65,7 @@ class PsyChatModel:
         history = history.replace('用户:', '来访者：')
         history = history.replace('咨询师:', '咨询师：')
         history = history.replace(' ', '')
-
+        print(history)
         history += '\n' + '咨询师：'
         query = get_instruction(dialogue_history=history)
         response, _ = self.model.chat(self.tokenizer, query, history=[], temperature=0.8, top_p=0.8)

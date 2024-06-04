@@ -154,7 +154,7 @@ window.addEventListener('beforeunload', function(event) {
 
 function clearChat() {
     // 弹出确认框让用户确认是否清除聊天记录
-    if (confirm("确定要清空聊天记录及音频缓存吗？")) {
+    if (confirm("确定要清空聊天记录吗？")) {
         // 清空聊天容器的内容
         const chatContainer = document.getElementById('chat-container');
         chatContainer.innerHTML = ''; // 清空聊天容器
@@ -173,7 +173,7 @@ function clearChat() {
         defaultMessage();
     } else {
         // 如果用户点击“取消”，则不执行任何操作
-        console.log("取消清空聊天记录和音频缓存。");
+        console.log("取消清空聊天记录。");
     }
 }
 
@@ -195,8 +195,9 @@ function addMessage(sender, text, save = true) {
     // messageDiv.innerHTML = `<span  class="message-text">${sender === 'user' ? '用户' : '咨询师'}: ${text}</span>` +
     //     (sender === 'therapist' ? `<audio controls id="audioPlayer" style="display:none"></audio><button class="audio-button" onclick="loadAudio('${sender}')">播放语音</button>` : '');
 
-    messageDiv.innerHTML = `<span class="message-text">${sender === 'user' ? '用户' : '咨询师'}: ${text}</span>` +
-        (sender === 'therapist' ? `<audio controls id="audioPlayer${uniqueId}" style="display:none"></audio><button class="audio-button" id="audioButton${uniqueId}" onclick="toggleAudio('${uniqueId}')">播放语音</button>` : '');
+    // messageDiv.innerHTML = `<span class="message-text">${sender === 'user' ? '用户' : '咨询师'}: ${text}</span>` +
+    //     (sender === 'therapist' ? `<audio controls id="audioPlayer${uniqueId}" style="display:none"></audio><button class="audio-button" id="audioButton${uniqueId}" onclick="toggleAudio('${uniqueId}')">播放语音</button>` : '');
+    messageDiv.innerHTML = `<span class="message-text">${sender === 'user' ? '用户' : '咨询师'}: ${text}</span>`;
 
     container.appendChild(messageDiv);
     scrollToBottom();

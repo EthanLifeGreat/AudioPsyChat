@@ -4,9 +4,7 @@
 
 ## 使用
 
-使用单卡3090能保证每次对话交互时间在1秒左右（显存占用16G左右）
-
-我们推荐使用Ubuntu 20.04.6 LTS系统，系统CUDA驱动版本不应低于11.7，推荐为12.0，python、pytorch、paddle等版本详见init_env.sh。
+我们推荐使用Ubuntu 20.04.6 LTS系统与支持CUDA的显卡（显存大于16G），其中系统CUDA驱动版本不应低于11.7，推荐为12.0，python、pytorch、paddle等版本详见init_env.sh。
 
 ### 环境搭建
 
@@ -48,4 +46,5 @@ python main.py
 请注意，本程序仅用于学习交流，该系统不是医疗保健专业人员，不能替代医生、心理医生或其他专业人士的意见、诊断、建议或治疗。对于将本程序应用于医疗保健的行为，作者不对产生的结果负任何责任。
 
 ## DEMO
-[(https://www.bilibili.com/video/BV13M4m1679N/)](https://www.bilibili.com/video/BV13M4m1679N/)
+使用单卡3090能保证每次对话交互时间在1秒左右（显存占用16G左右）
+[Audio PsyChat Demo](https://www.bilibili.com/video/BV13M4m1679N/)

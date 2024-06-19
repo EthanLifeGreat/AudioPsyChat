@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="chenyixiang@10.10.1.211:22 password (2)" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="chenyixiang@10.10.1.211:22 password (12)" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="chenyixiang@10.10.1.211:22 password">
         <serverdata>
           <mappings>
             <mapping deploy="/tmp/pycharm_project_535" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenyixiang@10.10.1.211:22 password (10)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenyixiang@10.10.1.211:22 password (11)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenyixiang@10.10.1.211:22 password (12)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mnt/shareEEx/chenyixiang/audioGLM" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
@@ -51,6 +72,20 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="chenyixiang@10.10.1.211:22 password (8)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenyixiang@10.10.1.211:22 password (9)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="yixiang">
         <serverdata>
           <mappings>
@@ -73,5 +108,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

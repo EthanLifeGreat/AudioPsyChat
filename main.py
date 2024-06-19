@@ -3,12 +3,12 @@ from fastapi.responses import JSONResponse
 from api.ffmpeg_api import convert_opus_to_wav
 from pydantic import BaseModel
 from api.psy_chat_api import PsyChatModel
+from api.glm_chat_api import PsyChatGLM4
 from paddlespeech.cli.tts.infer import TTSExecutor
 from pathlib import Path as P
 from paddlespeech.cli.asr.infer import ASRExecutor
 from fastapi.staticfiles import StaticFiles
 # from fastapi.middleware.cors import CORSMiddleware
-
 
 app = FastAPI()
 
@@ -109,7 +109,8 @@ async def text_converte_audio():
 
 asr = ASRExecutor()
 tts = TTSExecutor()
-llm = PsyChatModel()
+# llm = PsyChatModel()
+llm = PsyChatGLM4()
 
 # 先跑一遍ASR+TTS以加快推理速度
 asr(P('./test/do_not_delete_please.wav'))
@@ -141,4 +142,4 @@ def call_tts_api(text: str):
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8086)
+    uvicorn.run(app, host="0.0.0.0", port=8087)
